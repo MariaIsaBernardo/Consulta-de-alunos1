@@ -41,6 +41,7 @@ app.get("/alunos", async (req, res) => {
     }
 });
 
+//listar alunos
 app.get("/alunos/:id", validarId, async (req, res) => {
     try {
         const alunos = await listarTodos();
